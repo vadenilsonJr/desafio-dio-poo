@@ -35,11 +35,11 @@ public class Main {
         System.out.println("Conteudos inscritos Vadenilson: " + dev1.getConteudosIncritos());
         System.out.println("----------");
         dev1.progredir();
-        System.out.println("----------");
+        System.out.println("----");
         dev1.progredir();
-        System.out.println("----------");
+        System.out.println("----");
         dev1.progredir();
-        System.out.println("----------");
+        System.out.println("----");
         System.out.println("Conteudos inscritos Vadenilson: " + dev1.getConteudosIncritos());
         System.out.println("Conteudos Concluidos Vadenilson:" + dev1.getConteudosConcluidos());
         System.out.println("XP:" + dev1.calcularTotalXp());
@@ -50,9 +50,9 @@ public class Main {
         System.out.println("Conteudos inscritos Camila: " + dev2.getConteudosIncritos());
         System.out.println("----------");
         dev2.progredir();
-        System.out.println("----------");
+        System.out.println("----");
         dev2.progredir();
-        System.out.println("----------");
+        System.out.println("----");
         System.out.println("Conteudos inscritos Camila: " + dev2.getConteudosIncritos());
         System.out.println("Conteudos Concluidos Camila:" + dev2.getConteudosConcluidos());
         System.out.println("XP:" + dev2.calcularTotalXp());
