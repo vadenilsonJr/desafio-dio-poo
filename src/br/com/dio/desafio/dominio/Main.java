@@ -13,8 +13,8 @@ public class Main {
 
         Curso curso2 = new Curso();
 
-        curso2.setTitulo("Curso DOTNET");
-        curso2.setDescricao("Descrição curso DOTNET");
+        curso2.setTitulo("Curso POO");
+        curso2.setDescricao("Descrição curso POO");
         curso2.setCargaHoraria(10);
 
         Mentoria mentoria = new Mentoria();
@@ -22,9 +22,23 @@ public class Main {
         mentoria.setDescricao("Mentoria do Java");
         mentoria.setData(LocalDate.now());
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Springboot Expirence");
+        bootcamp.setDescricao("Descrição Bootcamp Springboot Expirence");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
+
+        Dev dev1 = new Dev();
+        dev1.setNome("Vadenilson");
+        dev1.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos inscritos Vadenilson: " + dev1.getConteudosIncritos());
+        dev1.progredir();
+        dev1.progredir();
+        dev1.progredir();
+        System.out.println("Conteudos inscritos Vadenilson: " + dev1.getConteudosIncritos());
+        System.out.println("Conteudos Concluidos Vadenilson:" + dev1.getConteudosConcluidos());
+        System.out.println("XP:" + dev1.calcularTotalXp());
 
     }
 }
